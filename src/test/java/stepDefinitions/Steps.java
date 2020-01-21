@@ -18,7 +18,8 @@ public class Steps {
 	@Given("^user is on Home Page$")
 	 public void user_is_on_Home_Page(){
 	 System.setProperty("webdriver.chrome.driver","C:\\Users\\Dyanda\\Desktop\\chromedriver.exe");
-	 driver = new ChromeDriver();
+	//	System.setProperty("webdriver.chrome.driver","C:\\Users\\user\\Desktop\\Study Material\\Selenium\\chromedriver_win32 (2)\\chromedriver.exe");
+		driver = new ChromeDriver();
 	 driver.manage().window().maximize();
 	 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	 driver.get("http://www.shop.demoqa.com");
@@ -120,4 +121,6 @@ public class Steps {
 	 placeOrder.submit();
 	 } 
 	 
+	 
+
 }
